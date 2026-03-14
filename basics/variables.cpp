@@ -1,14 +1,11 @@
 #include <iostream>
+#include <string>
+
 
 int main() {
-
-    int age = 27;
-    double price = 10.5;
-    char letter = 'A';
-
-    std::cout << "Age: " << age << std::endl;
-    std::cout << "Price: " << price << std::endl;
-    std::cout << "Letter: " << letter << std::endl;
-
+    std::cout<< "Введите имя: \n";
+    std::string name;
+    getline(std::cin, name);
+    std::cout<< "Привет, "<< name << "!\n";
     return 0;
 }
